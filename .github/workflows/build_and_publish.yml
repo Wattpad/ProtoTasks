@@ -6,7 +6,7 @@ on:
 
 jobs:
   build_and_publish:
-    uses: wattpad/github-workflows/.github/workflows/go-build-and-publish.yml@PI-1898-buf-schema-login
+    uses: wattpad/github-workflows/.github/workflows/go-build-and-publish.yml@main
     secrets: inherit
     with:
       api_type: GRPC
