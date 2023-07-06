@@ -5,5 +5,8 @@ on:
 
 jobs:
   build:
-    uses: wattpad/github-workflows/.github/workflows/go-test-and-build.yml@main
+    uses: wattpad/github-workflows/.github/workflows/go-test-and-build.yml@PI-1898-buf-schema-login
     secrets: inherit
+    with:
+      golangci_version: "v1.52.1"
+      api_type: GRPC

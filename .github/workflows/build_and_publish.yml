@@ -1,9 +1,12 @@
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
 
 jobs:
   build_and_publish:
-    uses: wattpad/github-workflows/.github/workflows/go-build-and-publish.yml@main
+    uses: wattpad/github-workflows/.github/workflows/go-build-and-publish.yml@PI-1898-buf-schema-login
     secrets: inherit
+    with:
+      api_type: GRPC
